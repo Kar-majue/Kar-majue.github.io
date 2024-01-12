@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Kar-majue.github.io/al-folio/sitemap.xml
+Sitemap: https://Kar-majue.github.io/sitemap.xml
