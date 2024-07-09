@@ -2,29 +2,32 @@
 layout: about
 title: about
 permalink: /
-# subtitle: <a href='#'>CSIS</a>. University of Tokyo.
-subtitle: <p>City Science  |  GIS & Urban Planning  |  Civil Engineering  |  Landscape Architecture</p>
+subtitle: Project Researcher @CSIS, University of Tokyo.
+subtitle2: Digital Twin  |  City Science  |  GIS & Urban Planning  |  Civil Engineering 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: mj_prof_.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>majue@csis.u-tokyo.ac.jp</p>
-    <p>Tokyo, Japan</p>
+  more_info: false
+  # more_info: >
+  #   <p>majue@csis.u-tokyo.ac.jp</p>
+  #   <p>Tokyo, Japan</p>
 
 news: true  # includes a list of news items
 latest_posts: true  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
-I am currently a project researcher immersed in the innovative field of [Human Centered Urban Informatics](https://sekilab.iis.u-tokyo.ac.jp/) at the [Center for Spatial Information Science (CSIS), University of Tokyo](https://www.csis.u-tokyo.ac.jp/). I received my Ph.D. degree from [Department of Civil Engineering, University of Tokyo](http://www.civil.t.u-tokyo.ac.jp/) in 2023. 
+<!-- <p>Digital Twin | City Science  |  GIS & Urban Planning  |  Civil Engineering </p> -->
 
-At the heart of my work lies a passion for marrying the precision of digital planning support tools with the insights afforded by GIS and the predictive power of urban simulation. I am deeply committed to forging new pathways in data-driven methodologies, all aimed at enhancing the efficiency and effectiveness of urban planning and design processes.
+I am currently a Project Researcher at the [Center for Spatial Information Science (CSIS), University of Tokyo](https://www.csis.u-tokyo.ac.jp/), primarily focusing on [Human Centered Urban Informatics](https://sekilab.iis.u-tokyo.ac.jp/). I received my Ph.D. degree from the [Department of Civil Engineering, University of Tokyo](http://www.civil.t.u-tokyo.ac.jp/) in 2023. 
 
-Beyond the technical facets of my research, I harbor a keen interest in the principles of sustainable development and the advocacy for compact city policies. I believe in creating urban environments that are not only technologically advanced but also sustainable and conducive to human well-being.
+My research interests lie in the impact of digital tools on urban development and how these tools can foster citizen participation. Currently, my work revolves around the development of a digital twin platform and the application of generative AI methodologies in the field of urban planning. 
 
-As I navigate the intersection of technology and urban systems, I invite you to join me in exploring innovative solutions that shape the cities of tomorrow.
+Additionally, I am deeply concerned with demographic changes and compact city policies in the context of population decline and aging, as well as the sustainable development of future cities.
+
+I am very open to research collaboration. If you are interested, please feel free to contact me!
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
