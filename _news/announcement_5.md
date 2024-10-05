@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I get my Ph.D degree from the Department of Civil Engineering, University of Tokyo! :sparkles:
+I got my Ph.D degree from the Department of Civil Engineering, University of Tokyo! :sparkles:
