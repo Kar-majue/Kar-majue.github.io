@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Participated [Netmob2024] (https://netmob.org/www24/) during Oct. 7-9, Washington, D.C.
+Participated [Netmob2024](https://netmob.org/www24/) during Oct. 7-9, Washington, D.C.
