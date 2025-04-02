@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Project Researcher @CSIS, University of Tokyo.
+subtitle: Project Assistant Professor @CSIS, University of Tokyo.
 subtitle2: Digital Twin  |  City Science  |  GIS & Urban Planning  |  Civil Engineering 
 
 profile:
@@ -21,7 +21,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 <!-- <p>Digital Twin | City Science  |  GIS & Urban Planning  |  Civil Engineering </p> -->
 
-I am currently a Project Researcher at the [Center for Spatial Information Science (CSIS), University of Tokyo](https://www.csis.u-tokyo.ac.jp/), primarily focusing on [Human Centered Urban Informatics](https://sekilab.iis.u-tokyo.ac.jp/). I received my Ph.D. degree from the [Department of Civil Engineering, University of Tokyo](http://www.civil.t.u-tokyo.ac.jp/) in 2023. 
+I am currently a Project Assistant Professor at the [Center for Spatial Information Science (CSIS), University of Tokyo](https://www.csis.u-tokyo.ac.jp/), primarily focusing on [Human Centered Urban Informatics](https://sekilab.iis.u-tokyo.ac.jp/). I received my Ph.D. degree from the [Department of Civil Engineering, University of Tokyo](http://www.civil.t.u-tokyo.ac.jp/) in 2023. 
 
 My research interests lie in the impact of digital tools on urban development and how these tools can foster citizen participation. Currently, my work revolves around the development of a digital twin platform and the application of generative AI methodologies in the field of urban planning. 
 
