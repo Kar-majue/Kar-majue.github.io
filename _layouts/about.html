@@ -68,6 +68,7 @@ layout: default
           {% if page.news and site.announcements.enabled -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">news</a></h2>
             {%- include news.html limit=true %}
+            <script defer src="{{ '/assets/js/news-slider.js' | relative_url | bust_file_cache }}"></script>
           {%- endif %}
 
           <!-- Latest posts

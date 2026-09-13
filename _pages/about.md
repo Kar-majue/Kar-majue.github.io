@@ -23,9 +23,9 @@ social: true  # includes social icons at the bottom of the page
 
 I am currently a Project Assistant Professor at the [Center for Spatial Information Science (CSIS), University of Tokyo](https://www.csis.u-tokyo.ac.jp/), primarily focusing on [Human Centered Urban Informatics](https://sekilab.iis.u-tokyo.ac.jp/). I received my Ph.D. degree from the [Department of Civil Engineering, University of Tokyo](http://www.civil.t.u-tokyo.ac.jp/) in 2023. 
 
-My research interests lie in the impact of digital tools on urban development and how these tools can foster citizen participation. Currently, my work revolves around the development of a digital twin platform and the application of generative AI methodologies in the field of urban planning. 
+My research interests lie in understanding how digital technologies can support more inclusive and sustainable urban development. My current work focuses on urban digital twins, smart mobility, and the application of generative AI to urban planning and digital governance, with particular interest in how these tools can support decision-making and citizen participation.
 
-Additionally, I am deeply concerned with demographic changes and compact city policies in the context of population decline and aging, as well as the sustainable development of future cities.
+I am also interested in demographic change, compact city policies under population decline and aging, as well as climate resilience and the sustainable development of future cities.
 
 I am very open to research collaboration. If you are interested, please feel free to contact me!
 
