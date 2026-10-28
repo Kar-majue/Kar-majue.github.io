@@ -95,6 +95,11 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+
+              <!-- Language switcher -->
+              <li class="nav-item">
+                <span class="nav-link"><a href="{{ '/' | relative_url }}">EN</a> &middot; <a href="{{ '/ja/' | relative_url }}">日本語</a> &middot; <a href="{{ '/zh/' | relative_url }}">中文</a></span>
+              </li>
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->

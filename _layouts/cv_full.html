@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<!-- _layouts/cv_full.html -->
+<!-- Print-friendly, single-column rendering of the full CV.
+     Uses the same data source as /cv/ (_data/cv.yml via site.data.cv),
+     without the sidebar TOC or PDF-download button.
+     Use the browser's print function to save this page as a PDF. -->
+<style>
+  @media print {
+    header,
+    footer,
+    progress,
+    .progress-container,
+    #back-to-top {
+      display: none !important;
+    }
+    .cv-full .card {
+      border: none !important;
+      box-shadow: none !important;
+      break-inside: avoid;
+    }
+    body {
+      font-size: 12px;
+    }
+  }
+</style>
+<div class="post cv-full">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    <div class="cv">
+      {% for entry in site.data.cv %}
+        <a class="anchor" id="{{ entry.title }}"></a>
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
+          <div>
+            {% if entry.type == "list" %}
+              {% include cv/list.html %}
+            {% elsif entry.type == "map" %}
+              {% include cv/map.html %}
+            {% elsif entry.type == "nested_list" %}
+              {% include cv/nested_list.html %}
+            {% elsif entry.type == "time_table" %}
+              {% include cv/time_table.html %}
+            {% elsif entry.type == "list_groups" %}
+              {% include cv/list_groups.html %}
+            {% else %}
+              {{ entry.contents }}
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </article>
+</div>
