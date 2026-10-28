@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://Kar-majue.github.io/sitemap.xml
+Sitemap: https://jue-ma.com/sitemap.xml
