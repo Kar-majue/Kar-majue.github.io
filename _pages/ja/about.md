@@ -1,8 +1,21 @@
 ---
-layout: page
+layout: about
 title: 日本語
 permalink: /ja/
 nav: false
+subtitle: 特任助教 @ 東京大学 空間情報科学研究センター（CSIS）
+subtitle2: デジタルツイン | シティサイエンス | GIS・都市計画 | 土木工学
+
+profile:
+  align: right
+  image: mj_prof_.jpg
+  image_circular: false # crops the image to make it circular
+  more_info: false
+
+news: true  # includes a list of news items
+latest_posts: true  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
 ---
 
 東京大学空間情報科学研究センター（CSIS）の特任助教を務めており、主に[人間中心の都市情報学](https://sekilab.iis.u-tokyo.ac.jp/)に取り組んでいます。2023年に東京大学大学院工学系研究科社会基盤学専攻にて博士号を取得しました。

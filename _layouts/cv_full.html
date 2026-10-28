@@ -2,60 +2,156 @@
 layout: default
 ---
 <!-- _layouts/cv_full.html -->
-<!-- Print-friendly, single-column rendering of the full CV.
-     Uses the same data source as /cv/ (_data/cv.yml via site.data.cv),
-     without the sidebar TOC or PDF-download button.
-     Use the browser's print function to save this page as a PDF. -->
+<!-- Full CV rendered as a document that mirrors the original Word-made CV
+     (CV_majue_2026.pdf): serif type, two-column sections with ALL-CAPS labels
+     on the left, dates right-aligned. Data: _data/cv_full.yml.
+     Printing this page (Print -> Save as PDF) reproduces the CV. -->
 <style>
+  .cvdoc {
+    font-family: "Times New Roman", "Times", "Liberation Serif", serif;
+    background: #fff;
+    color: #000;
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 48px 56px 56px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.18);
+    font-size: 15px;
+    line-height: 1.45;
+  }
+  .cvdoc a { color: #000; text-decoration: none; }
+  .cvdoc-head { display: flex; justify-content: space-between; align-items: flex-start; }
+  .cvdoc-name { font-size: 30px; font-weight: bold; letter-spacing: 1px; line-height: 1.1; }
+  .cvdoc-contact { text-align: right; font-size: 14px; line-height: 1.5; }
+  .cvdoc-section { display: flex; margin-top: 26px; }
+  .cvdoc-label {
+    flex: 0 0 168px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-right: 18px;
+    line-height: 1.35;
+  }
+  .cvdoc-body { flex: 1 1 auto; min-width: 0; }
+  .cvdoc-entry { margin-bottom: 14px; }
+  .cvdoc-entry:last-child { margin-bottom: 0; }
+  .cvdoc-row { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+  .cvdoc-right { text-align: right; white-space: nowrap; }
+  .cvdoc-bold { font-weight: bold; }
+  .cvdoc-indent { padding-left: 28px; }
+  .cvdoc-bullets { margin: 2px 0 0 0; padding: 0; list-style: none; }
+  .cvdoc-bullets li { padding-left: 16px; text-indent: -16px; margin: 1px 0; }
+  .cvdoc-bullets li::before { content: "•  "; }
+  .cvdoc-pub { padding-left: 20px; position: relative; margin-bottom: 12px; }
+  .cvdoc-pub:last-child { margin-bottom: 0; }
+  .cvdoc-pub::before { content: "●"; position: absolute; left: 0; top: 4px; font-size: 8px; }
+  .cvdoc-note { margin-bottom: 8px; }
+
   @media print {
-    header,
-    footer,
-    progress,
-    .progress-container,
-    #back-to-top {
-      display: none !important;
+    @page { margin: 22mm 18mm; }
+    header, footer, nav, .progress-container, #back-to-top, .navbar { display: none !important; }
+    body { background: #fff !important; }
+    .container, .container-fluid { max-width: none !important; padding: 0 !important; margin: 0 !important; }
+    .cvdoc {
+      box-shadow: none;
+      max-width: none;
+      padding: 0;
+      font-size: 11pt;
+      line-height: 1.4;
     }
-    .cv-full .card {
-      border: none !important;
-      box-shadow: none !important;
-      break-inside: avoid;
-    }
-    body {
-      font-size: 12px;
-    }
+    .cvdoc-name { font-size: 24pt; }
+    .cvdoc-contact { font-size: 10.5pt; }
+    .cvdoc-section { margin-top: 20px; }
+    .cvdoc-label { flex-basis: 150px; }
+    .cvdoc-entry, .cvdoc-pub { break-inside: avoid; }
   }
 </style>
-<div class="post cv-full">
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.description %}
-      <p class="post-description">{{ page.description }}</p>
-    {% endif %}
-  </header>
 
-  <article>
-    <div class="cv">
-      {% for entry in site.data.cv %}
-        <a class="anchor" id="{{ entry.title }}"></a>
-        <div class="card mt-3 p-3">
-          <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-          <div>
-            {% if entry.type == "list" %}
-              {% include cv/list.html %}
-            {% elsif entry.type == "map" %}
-              {% include cv/map.html %}
-            {% elsif entry.type == "nested_list" %}
-              {% include cv/nested_list.html %}
-            {% elsif entry.type == "time_table" %}
-              {% include cv/time_table.html %}
-            {% elsif entry.type == "list_groups" %}
-              {% include cv/list_groups.html %}
-            {% else %}
-              {{ entry.contents }}
-            {% endif %}
-          </div>
-        </div>
-      {% endfor %}
+{% assign cv = site.data.cv_full %}
+<div class="cvdoc">
+  <div class="cvdoc-head">
+    <div class="cvdoc-name">{{ cv.name }}</div>
+    <div class="cvdoc-contact">
+      {{ cv.email }} | <a href="{{ cv.website }}">{{ cv.website }}</a><br>
+      Last updated {{ cv.last_updated }}
     </div>
-  </article>
+  </div>
+
+  {% for section in cv.sections %}
+    <div class="cvdoc-section">
+      <div class="cvdoc-label">{{ section.label }}</div>
+      <div class="cvdoc-body">
+        {% if section.type == "interests" %}
+          <div>{{ section.text }}</div>
+
+        {% elsif section.type == "education" %}
+          {% for e in section.entries %}
+            <div class="cvdoc-entry">
+              <div class="cvdoc-row">
+                <span class="cvdoc-bold">{{ e.degree }}</span>
+                <span class="cvdoc-right">{{ e.years }}</span>
+              </div>
+              {% for line in e.lines %}<div>{{ line }}</div>{% endfor %}
+              {% if e.thesis %}<div class="cvdoc-indent">Thesis: {{ e.thesis }}</div>{% endif %}
+              {% if e.supervisor %}<div class="cvdoc-indent">Supervisor: {{ e.supervisor }}</div>{% endif %}
+            </div>
+          {% endfor %}
+
+        {% elsif section.type == "appointments" %}
+          {% for e in section.entries %}
+            <div class="cvdoc-entry">
+              <div class="cvdoc-row">
+                <span class="cvdoc-bold">{{ e.institution }}</span>
+                {% if e.period %}<span class="cvdoc-right">{{ e.period }}</span>{% endif %}
+              </div>
+              {% if e.unit %}<div>{{ e.unit }}</div>{% endif %}
+              {% for r in e.roles %}
+                <div class="cvdoc-row">
+                  <span>{{ r.title }}</span>
+                  {% if r.period %}<span class="cvdoc-right">{{ r.period }}</span>{% endif %}
+                </div>
+              {% endfor %}
+              {% if e.bullets %}
+                <ul class="cvdoc-bullets">
+                  {% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+          {% endfor %}
+
+        {% elsif section.type == "publications" %}
+          {% if section.note %}<div class="cvdoc-note">{{ section.note }}</div>{% endif %}
+          {% for e in section.entries %}
+            <div class="cvdoc-pub">
+              <div>{{ e.title }}</div>
+              <div>{{ e.authors }}</div>
+              {% if e.venues %}
+                {% for v in e.venues %}<div>{{ v }}</div>{% endfor %}
+              {% else %}
+                <div>{{ e.venue }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+
+        {% elsif section.type == "talks" %}
+          {% for e in section.entries %}
+            <div class="cvdoc-entry">
+              <div>{{ e.title }}</div>
+              <div class="cvdoc-indent">{{ e.venue }}</div>
+            </div>
+          {% endfor %}
+
+        {% elsif section.type == "lines" %}
+          {% for item in section.items %}<div>{{ item }}</div>{% endfor %}
+
+        {% elsif section.type == "teaching" %}
+          {% for g in section.groups %}
+            <div class="cvdoc-entry">
+              <div>{{ g.heading }}</div>
+              {% if g.sub %}<div class="cvdoc-indent">{{ g.sub }}</div>{% endif %}
+              {% for item in g.items %}<div class="cvdoc-indent">{{ item }}</div>{% endfor %}
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
 </div>

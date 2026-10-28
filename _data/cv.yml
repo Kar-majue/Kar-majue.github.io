@@ -1,6 +1,6 @@
 # Curriculum Vitae data for the /cv/ page (rendered by _layouts/cv.html).
 # Content transcribed from CV_majue_2026.pdf (last updated 2026-07).
-# Update this file to update both /cv/ and /cv/full/.
+# This file drives the /cv/ summary page only. The full CV lives in _data/cv_full.yml.
 
 - title: General Information
   type: map
@@ -86,62 +86,3 @@
     - title: Research Intern
       institution: Beijing City Lab, Tsinghua University, Beijing, China
       year: 2019
-
-- title: Journal Publications
-  type: list
-  contents:
-    - "* indicates the corresponding author"
-    - "J. Ma, C. Sun*, S. C. Gabilondo, C. D. Torbjörnsson, Q. Guo, Y. Shibuya, Y. Sekimoto. Socioeconomic disparities in heat exposure in India: A mobility-based analysis. Sustainable Cities and Society 145: 107437, 2026."
-    - "X. Xu, J. Ma*, F. Seta, K. Sho. Should We Jump from the Perspective of Shrinking Cities to Urban Growth Divides? The Hints from the City Size Distribution in Japan Over the Past Half-Century. Cities 158: 105638, 2025."
-    - "X. Xu, J. Ma*, K. Sho, F. Seta. Are East Asian “shrinking cities” falling into a loop? Insights from the interplay between population decline and metropolitan concentration in Japan. Cities 155: 105445, 2024."
-    - "J. Ma*, Y. Shibuya, Y. Pang, H. Omata, Y. Sekimoto. A Cost-and-effect Simulation Model for Compact City Approaches: A Case Study in Japan. Cities 152: 105212, 2024."
-    - "Kumar, T. Islam, J. Ma, T. Kashiyama, Y. Sekimoto, C. Mattmann. WindSR: Improving Spatial Resolution of Satellite Wind Speed Through Super-Resolution. IEEE Access 11: 69486-69494, 2023."
-    - "K. Kajiwara, J. Ma*, T. Seto, Y. Sekimoto, Y. Ogawa, H. Omata. Development of current estimated household data and agent-based simulation of the future population distribution of households in Japan. Computers, Environment and Urban Systems 98: 101873, 2022."
-    - "J. Ma*, T. Seto, H. Omata, Y. Sekimoto. Prototyping of A Citizen-oriented Regional Planning Tool to Automated Digital Design Process: A Case Study on the New Station Planning in Susono, Shizuoka Prefecture. Reports of the City Planning Institution of Japan 20: 277-283, 2021."
-    - "E. Sigit*, N. Elkalam, J. Ma, I. Kinoshita. An Empirical Study on Role of Art to Raising City Image from the Context of Youth Perceptions: Semarang City, Indonesia. Asian Journal of Behavioral Studies 4(16): 1-17, 2018."
-
-- title: Refereed Conference Papers and Presentations
-  type: list
-  contents:
-    - "Jianyu Fu, Zhihua Zhong, Xukang Wang, Jue Ma, Yoshihide Sekimoto. Linking Urban Morphology and Human Activity Patterns: An Empirical Study Based on Mobility Survey Data from the Paris Region. IEEE BigData 2025."
-    - "Fu Jianyu, Jue Ma, Yoshihide Sekimoto. Urban Real Accessibility Evaluation Based on GPS Data: Integration of Multiple Accessibility Indicators and Deep Learning. NetMob Data Challenge 2025."
-    - "Santiago Garcia-Gabilondo, Ketian Chen, Ziyue Chen, Jue Ma, Yoshihide Sekimoto. Improving Activity Classification Using Highly Detailed Demographic Profiles. NetMob Data Challenge 2025."
-    - "Ketian Chen, Jue Ma, Chenbo Zhao, Yoshihide Sekimoto. Temporal Convolutional Network Forecasting of Tourism Demand Indicators Based on GPS Data: A Case Study in Japan. NetMob 2025."
-    - "J. Ma, C. Zhao, Y. Ogawa, Y. Sekimoto. Predicting Building Height from Footprint and Urban Planning Information for Digital Twin Generation. Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., XLVIII-4/W15-2025, 107-112, 2025. 20th 3D GeoInfo Conference 2025."
-    - "J. Ma, Y. Pang, Y. Sekimoto. Development of Mobility Digital Twin for Public Transportation Planning: Addressing the Challenges of Depopulation and Aging. Computational Urban Planning and Urban Management Conference 2025."
-    - "Luyao Liu, Jue Ma, Yoshihide Sekimoto, Yuya Shibuya. Identifying and analyzing consumer behaviors in shopping center from GPS data based on machine learning. Computational Urban Planning and Urban Management Conference 2025."
-    - "J. Ma, S. Garcia, C. Torbjörnsson, C. Sun, Z. Wu, Y. Shibuya, Y. Sekimoto. Socioeconomic Disparities in Heat Exposure and Mitigation Based on Human Mobility in India. Netmob Data Challenge 2024."
-    - "Y. Shibuya, S. Garcia, C. Torbjörnsson, Z. Wu, C. Sun, J. Ma, Y. Sekimoto. Dynamic Air Pollution Exposure Assessment Based on Human Mobility: Case Studies from India, Indonesia, and Mexico. Netmob Data Challenge 2024."
-    - "J. Ma, L. A. Alonso, M. F. ElKatsha, W. Mo, Y. Sekimoto, K. Larson. Navigating Work-Life Symmetry: A Multi-Stakeholder Indicator System. 2024 ACSP 64th Annual Conference."
-    - "L. Liu, S. Garcia, J. Ma, E. Zeng, W. Li, Y. Shibuya, Y. Sekimoto. Revealing the Spatiotemporal Evolutionary Characteristics, Influencing Factors and Mitigation Measures of Carbon Emission in Tokyo. The 36th AESOP Annual Congress, 2024."
-    - "Y. Shibuya, S. Garcia, C. Sun, P. Yu, J. Ma, S. Yoshihide. Unmasking Socioeconomic Disparities: A Study of Urban Segregation through the Lens of Mobile App Usage Patterns. Netmob Data Challenge 2023."
-    - "J. Ma, H. Omata, Y. Shibuya, Y. Sekimoto. Automatic cost and effect estimation for regional planning scenarios. The 31st Annual Conference of the Association for GIS, 2022."
-    - "J. Ma, H. Omata, Y. Sekimoto. Development of A GIS Database to Support Regional Plan through Digital Design. The 30th Annual Conference of the Association for GIS, 2021."
-    - "J. Ma, I. Kinoshita. The Online Destination Image of Main Sightseeing Spots in Tokyo -- Based on the Photo from Flickr Shared by Foreign Tourists. International Conference on Spatial Planning and Sustainable Development, 2019."
-    - "J. Ma, I. Kinoshita. The Urban Image of Special Wards of Tokyo based on geo-tagged photo. The Conference of Japan Institute of Landscape Architecture, 2019."
-
-- title: Invited Talks
-  type: list
-  contents:
-    - "Cost-effect Simulation Model and Digital Tool for Compact City Planning. KRIHS GAMC 2024 Geospatial Data Insight Seminar, Sept. 2024."
-    - "Citizen Participatory Planning Support Systems and Digital Tools. The University of Tokyo, May 2024."
-    - "Building Interactive Cities: Planning Support Systems and Digital Tools for Public Engagement. CMU-UT Symposium on Urban Engineering and Informatics, Apr. 2024."
-
-- title: Developed Tools
-  type: list
-  contents:
-    - Citizen Participative Regional Planning Digital Platform (2023)
-    - Multi-stakeholder Indicator Metrics System Platform (2023)
-
-- title: Teaching
-  type: nested_list
-  contents:
-    - title: Teaching Assistant, The University of Tokyo
-      items:
-        - "Spring 2023-2026: Geographic Information Systems Exercise"
-        - "Summer 2024-2025: Digital Space and Society Research Organization Summer School"
-        - "Spring 2024: Academic Frontier Lectures (Frontiers of Research and Social Implementation in Digital Space Society)"
-        - "Spring 2024: Exercises in Spatial Information Systems"
-    - title: Research Advisor
-      items:
-        - Advised 7 graduate and 8 undergraduate students' research projects

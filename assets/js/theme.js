@@ -140,10 +140,9 @@ let transTheme = () => {
 
 let initTheme = (theme) => {
   if (theme == null || theme == "null") {
-    const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      theme = "dark";
-    }
+    // Default to light mode regardless of OS preference.
+    // Visitors can still switch to dark with the toggle; their choice is remembered.
+    theme = "light";
   }
 
   setTheme(theme);

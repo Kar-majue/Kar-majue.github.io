@@ -1,8 +1,21 @@
 ---
-layout: page
+layout: about
 title: 中文
 permalink: /zh/
 nav: false
+subtitle: 特任助教 @ 东京大学 空间信息科学研究中心（CSIS）
+subtitle2: 数字孪生 | 城市科学 | GIS 与城市规划 | 土木工程
+
+profile:
+  align: right
+  image: mj_prof_.jpg
+  image_circular: false # crops the image to make it circular
+  more_info: false
+
+news: true  # includes a list of news items
+latest_posts: true  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: true  # includes social icons at the bottom of the page
 ---
 
 我目前担任东京大学[空间信息科学研究中心（CSIS）](https://www.csis.u-tokyo.ac.jp/)特任助教，主要研究方向为[以人为中心的城市信息学](https://sekilab.iis.u-tokyo.ac.jp/)。我于 2023 年在东京大学土木工程系获得博士学位。
