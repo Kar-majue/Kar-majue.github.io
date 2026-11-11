@@ -86,6 +86,9 @@ sections:
     type: publications
     note: "* indicates the corresponding author"
     entries:
+      - title: "Evaluating urban street views through collective emotional perception from multimodal social media cityscape posts: An R-ECoT-based interpretable framework"
+        authors: "J. Fu, X. Wang, J. Ma, C. Zhao, Y. Ogawa, Y. Sekimoto"
+        venue: "Landscape and Urban Planning (2026) 278: 105822"
       - title: "Socioeconomic disparities in heat exposure in India: A mobility-based analysis"
         authors: "J. Ma, C. Sun*, SC. Gabilondo, CD. Torbjörnsson, Q. Guo, Y. Shibuya, Y. Sekimoto"
         venue: "Sustainable Cities and Society (2026) 145: 107437"
