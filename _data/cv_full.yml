@@ -117,6 +117,12 @@ sections:
   - label: "REFEREED CONFERENCE PAPERS & PRESENTATIONS"
     type: publications
     entries:
+      - title: "From Chaos to Structure: Building Precise Regional Event Data from Raw News Archives with Large Language Models"
+        authors: "Artur Hovhannisyan; Jue Ma; Yoshihide Sekimoto"
+        venue: "IEEE Bigdata 2026"
+      - title: "Dwelling-Level Synthetic Populations from Unlinked Urban Data: Housing Inventory Reconstruction and Choice-Based Household Allocation in Tokyo"
+        authors: "Xunming Zhang; Jue Ma; Yoshihide Sekimoto"
+        venue: "IEEE Bigdata 2026 (Special Session on Neo Urban Metabolism)"
       - title: "Linking Urban Morphology and Human Activity Patterns: An Empirical Study Based on Mobility Survey Data from the Paris Region"
         authors: "Jianyu Fu; Zhihua Zhong; Xukang Wang; Jue Ma; Yoshihide Sekimoto"
         venue: "IEEE Bigdata 2025"
